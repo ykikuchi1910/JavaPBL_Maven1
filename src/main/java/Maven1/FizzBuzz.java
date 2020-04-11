@@ -21,8 +21,6 @@ public class FizzBuzz {
         }else if(i % 5 == 0) {
             return ("Buzz");
          // それ以外のとき
-        }else {
-            return ("" + i);
-        }
+        }else return (Integer.toString(i));
     }
 }
