@@ -6,11 +6,11 @@ public class FizzBuzz {
         System.out.println("実行例");
 
         for(int i = 1; i <= 150; i++) {
-            System.out.println(Output(i));
+            System.out.println(output(i));
         }
     }
 
-    public static String Output(int i){
+        public static String output(int i){
         // 3かつ5で割り切れるとき
         if((i % 3 == 0) && (i % 5 == 0)) {
             return ("FizzBuzz");

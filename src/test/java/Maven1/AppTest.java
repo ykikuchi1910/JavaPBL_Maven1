@@ -1,7 +1,6 @@
 package Maven1;
 
-import static org.junit.Assert.assertTrue;
-
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -9,12 +8,19 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    @Before
+    public void init() {
+    }
+
     @Test
+    public void test1(){
+      assertThat("Hello World!", App.hellotext());
+    }
+    /*@Test
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
+    }*/
+    private void assertThat(String app, String hellotext) {
     }
 }
